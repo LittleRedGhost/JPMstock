@@ -1,0 +1,16 @@
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\bin\Debug\wpfStock.exe.config
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\bin\Debug\wpfStock.exe.manifest
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\bin\Debug\wpfStock.application
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\bin\Debug\wpfStock.exe
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\bin\Debug\wpfStock.pdb
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\MainWindow.baml
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\MainWindow.g.cs
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\App.g.cs
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\wpfStock_MarkupCompile.cache
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\wpfStock.g.resources
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\wpfStock.Properties.Resources.resources
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\wpfStock.csproj.GenerateResource.Cache
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\wpfStock.exe.manifest
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\wpfStock.application
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\wpfStock.exe
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\wpfStock.pdb

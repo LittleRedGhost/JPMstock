@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="wpfStock.exe" version="1.0.0.1" publicKeyToken="05d8e7a9c8d93ad7" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="wpfStock" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="wpfStock.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="wpfStock.exe" size="17376">
+      <assemblyIdentity name="wpfStock" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>3E/UXTeaSeME5ukJUmRyZ9RPOeHjikKtMIpSK5b/epk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="wpfStock.exe.config" size="187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xm4bo26HQ0LNVwz1vdPYtzhkpMnp2AI5i+f0b+OahTI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=GRUNTTOSHLAP\Grunthos" issuerKeyHash="a8242184e5a99738c5a44ba37f0f51a5ae2d5704" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>aAj412gwJZWZBbSG7MqUl+wfe/vDQi1Tcc9PZ4awf3I=</DigestValue></Reference></SignedInfo><SignatureValue>xkNlcyTBjQli/Cz5Q3d0KaqHKsrZru2gE4ZNBrzalJia2PXoSxikpfU4mE1b4QfXWnmzn7OnG31JBvC9L6ZNGgb3mrpx64HjDC4ClFnLV9B+Xsowi1A5b+Qs2o/w/z2g6+h6gXCVE7pPw6yHaUeGZyBNvIGDDmyA+yoobVno6nE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>yELOunxaZwNr55OO9ZphJgbTfxudr7++d+ftSARcRJpUEmcJ9dbTMuznCPTHefD8oBQV6PSG0mcHeB7WClN9+XL1+ByPwQZBTgpponxORu3TJCMWSdZfVBW7AWCmWYIzmAYV2q3NSOYACNI7SH72/s7eVQ2dczxdZMV5PCKrmAE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="727fb086674fcf71532d42c3fb7b1fec9794caec86b4059995253068d7f80868" Description="" Url=""><as:assemblyIdentity name="wpfStock.exe" version="1.0.0.1" publicKeyToken="05d8e7a9c8d93ad7" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=GRUNTTOSHLAP\Grunthos</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>ryTFHJUUwqKBXkg3shLd/yN1UDgjO8W9UYg6EhlJQR8=</DigestValue></Reference></SignedInfo><SignatureValue>LuysrOq5MIW3Tlp18s8oImhElC/TcfoxHp7Xlenxp+1ZpaL4AaW4uLoKwxAtjQN5nlpQTNxGGNy9+OFDYDOFXj6fEKI9uBR/tPW6VBFRlCgA16qNMH9kyIZrQjPf5jyFJjTNG6WZLsW69Fk2B6XuK+qnKsH+bMClM1xIzDWHhqo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>yELOunxaZwNr55OO9ZphJgbTfxudr7++d+ftSARcRJpUEmcJ9dbTMuznCPTHefD8oBQV6PSG0mcHeB7WClN9+XL1+ByPwQZBTgpponxORu3TJCMWSdZfVBW7AWCmWYIzmAYV2q3NSOYACNI7SH72/s7eVQ2dczxdZMV5PCKrmAE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQFvlSxRsGGIpJzlYcMgyDpjANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARwBSAFUATgBUAFQATwBTAEgATABBAFAAXABHAHIAdQBuAHQAaABvAHMwHhcNMTYwNTIyMTc1NTQwWhcNMTcwNTIyMjM1NTQwWjA1MTMwMQYDVQQDHioARwBSAFUATgBUAFQATwBTAEgATABBAFAAXABHAHIAdQBuAHQAaABvAHMwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMhCzrp8WmcDa+eTjvWaYSYG038bna+/vnfn7UgEXESaVBJnCfXW0zLs5wj0x3nw/KAUFej0htJnB3ge1gpTffly9fgcj8EGQU4KaaJ8Tkbt0yQjFknWX1QVuwFgplmCM5gGFdqtzUjmAAjSO0h+9v7O3lUNnXM8XWTFeTwiq5gBAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAltLsDISLHptH+C7+fzjMFshD77/8oMj2QQfiOtewvQJF7Q0OrJuGfNCud5RbK8x7MqLKsBVo4P9zSyojOMr31DZXCv1nqqFtetHd/STpTAgUOyvQMqTlK8LoP6edoktjrm6Iu0SqVD3Zk4kvZfiwrNE1o5qnREaUln1Q5TiN8MQ=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

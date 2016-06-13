@@ -1,0 +1,37 @@
+﻿<Window x:Class="wpfStock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="JPMorgan Stocks" Height="320" Width="640" FontSize="14" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" Orientation="Vertical">
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <ListBox x:Name="listStockType" Height="120" Width="100" Margin="10" SelectionChanged="listStockType_SelectionChanged">
+                </ListBox>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Label x:Name="labelPrice" Content="Price (£)" Margin="0"/>
+                    <TextBox x:Name="textPrice" TextWrapping="Wrap" Text="0.00" Margin="0" Padding="5"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="buttonDividendYield" Content="Dividend Yield" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5" Padding="5" Click="buttonDividendYield_Click"/>
+                    <Label x:Name="labelDividendYield" Content="£-.--" Margin="20" FontSize="20" FontWeight="Bold"/>
+                </StackPanel>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Button x:Name="buttonPERatio" Content="P/E Ratio" Margin="5" Padding="5" Click="buttonPERatio_Click"/>
+                    <Label x:Name="labelPERatio" Content="£-.--" Margin="20" FontSize="20" FontWeight="Bold"/>
+                </StackPanel>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button x:Name="buttonBuy" Content="Buy" Margin="5" Padding="5" Click="buttonBuy_Click" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                <ListBox x:Name="listTrades" Width="440" Height="100" SelectionMode="Multiple" FontFamily="Courier New" FontSize="11" FontWeight="Bold"/>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Label x:Name="labelVWSP" Content="VWSP" HorizontalAlignment="Center"/>
+                    <Label x:Name="labelVWSPresult" Content="£-.--" FontSize="20" FontWeight="Bold" Margin="20,5" HorizontalAlignment="Center"/>
+                    <Label x:Name="labelCount" Content="..." HorizontalAlignment="Center"/>
+                </StackPanel>
+            </StackPanel>
+
+            <Label x:Name="labelGeoMean" Content="Geometric Mean" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Margin="0,5,0,0"/>
+        </StackPanel>
+    </Grid>
+</Window>
