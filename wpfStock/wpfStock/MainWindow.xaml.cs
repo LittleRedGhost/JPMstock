@@ -12,9 +12,9 @@ namespace wpfStock
     {
         public string symbol = "";
         public string type = "";
-        public decimal lastDividend = -1;
+        public Decimal lastDividend = -1;
         public int fixedDividend = -1;
-        public decimal parValue  = -1;
+        public Decimal parValue = -1;
 
         public stockData(string symbol, string type, decimal lastDividend, int fixedDividend, decimal parValue)
         {
@@ -93,13 +93,13 @@ namespace wpfStock
             // Clear the display, then validate the inputs...
             labelDividendYield.Content = "£-.--";
             stockData stock = null;
-            decimal stockPrice = 0.0M;
+            Decimal stockPrice = 0.0M;
             if (ValidateGetPrice(textPrice.Text, out stockPrice) == false) return;
             if (ValidateGetStock(out stock) == false) return;
             // Call the calculation function and display...
-            decimal? dividendYield = GetDividendYield(stock, stockPrice);
+            Decimal? dividendYield = GetDividendYield(stock, stockPrice);
             if (dividendYield != null)
-                labelDividendYield.Content = "£" + ((double)dividendYield).ToString("0.000");
+                labelDividendYield.Content = "£" + ((Decimal)dividendYield).ToString("0.000");
         }
 
         private void buttonPERatio_Click(object sender, RoutedEventArgs e)
@@ -107,11 +107,11 @@ namespace wpfStock
             // Clear the display, then validate the inputs...
             labelPERatio.Content = "£-.--";
             stockData stock = null;
-            decimal stockPrice = 0.0M;
+            Decimal stockPrice = 0.0M;
             if (ValidateGetPrice(textPrice.Text, out stockPrice) == false) return;
             if (ValidateGetStock(out stock) == false) return;
             // Call the calculation function and display...
-            decimal? dividendYield = GetDividendYield(stock, stockPrice);
+            Decimal? dividendYield = GetDividendYield(stock, stockPrice);
             if (dividendYield != null)
             {
                 if (dividendYield == 0)
@@ -132,15 +132,15 @@ namespace wpfStock
             DateTime rightNow = DateTime.Now;
             DateTime tradeTime = DateTime.Now.AddHours(-1);
             listTrades.Items.Clear();
-            double SumPriceQuantity = 0;
-            double SumQuantity = 0;
+            Decimal SumPriceQuantity = 0;
+            Decimal SumQuantity = 0;
             double GeoMeanTotal = 1; // Can't start the multiplication count with zero :)
             int StockCount = 50;
             for (int ii = 0; ii < StockCount; ii++)
             {
                 // Make everything nice and random.
                 int tradeQuantity = myRandom.Next(1,200);
-                double tradePrice = myRandom.Next(100, 2000) / 200d;
+                Decimal tradePrice = myRandom.Next(100, 2000) / 200M;
                 string buyOrSell = (myRandom.Next(2) == 1) ? "BUY " : "SELL";
                 tradeTime = tradeTime.AddSeconds(new Random().Next(1, 100));
                 // Build a fixed-width column display for quickness and clarity...
@@ -159,14 +159,14 @@ namespace wpfStock
                     SumQuantity += tradeQuantity;
                 }
                 //Build the price "total" for the GeoMean calc...
-                GeoMeanTotal *= tradePrice;
+                GeoMeanTotal *= (double)tradePrice;
             }
             // Perform the final VWSP calc
             labelVWSPresult.Content = "£-.--";
             labelCount.Content = listTrades.SelectedItems.Count + " item(s).";
             if (listTrades.SelectedItems.Count > 0) // Don't attempt if no items found in last 15 minutes.
             {
-                double VWSP = SumPriceQuantity / SumQuantity;
+                Decimal VWSP = SumPriceQuantity / SumQuantity;
                 labelVWSPresult.Content = "£" + VWSP.ToString("0.00");
             }
             //Geometric Mean calculation...

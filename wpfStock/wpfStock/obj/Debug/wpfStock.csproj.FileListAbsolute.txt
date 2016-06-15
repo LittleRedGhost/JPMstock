@@ -14,3 +14,4 @@ C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\wpfStock.exe.manifest
 C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\wpfStock.application
 C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\wpfStock.exe
 C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\wpfStock.pdb
+C:\Users\Grunthos\Dropbox\CODE\wpfStock\wpfStock\obj\Debug\wpfStock.csprojResolveAssemblyReference.cache
